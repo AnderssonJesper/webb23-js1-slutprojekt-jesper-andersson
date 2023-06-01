@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.js" defer ></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d9d8680faf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div class="card">
+    <div class="search">
+        <form id="searchForm">
+        <input type="text" placeholder="Välj stad" required spellcheck="false">
+        <button type="submit"> <i class="fa fa-magnifying-glass"></i></button>
+        <label for = "forecastHours">Välj tidsspan </label>
+        <select id = "forecastHours">
+            <option value="0">Vädret just nu</option>
+            <option value="3">3 Timmar</option>
+            <option value="6">6 Timmar</option>
+            <option value="9">9 Timmar</option>
+        </select>
+    
+</form> 
+    </div>
+    <div class="error">
+        <p>Går ej att hitta vald stad!</p>
+    </div>
+    <div class="description">
+        <h2 class="weatherDescription"></h2>
+    </div>
+    
+    <div class="weather">
+        <img src="https://openweathermap.org/img/w/01d.png" class="weatherIcon">
+        <h1 class= "temp">22 °C</h1>
+        <h2 class="city">Marbella</h2>
+        <div class="details">
+            <div class="col">
+                <img src="/images/humidity.png">
+                <div>
+                <p class="humidity"> 55%</p>
+                <p>Luftfuktighet</p>
+              
+</div>
+
+
+
+        </div> 
+        <div id="forecast1">
+            <span class="forecastTime"></span>
+            <span class="forecastTemp"></span>
+            <img class="forecastIcon" src="" alt="Forecast Icon">
+        </div>
+        <div id="forecast2">
+            <span class="forecastTime"></span>
+            <span class="forecastTemp"></span>
+            <img class="forecastIcon" src="" alt="Forecast Icon">
+        </div>
+        <div id="forecast3">
+            <span class="forecastTime"></span>
+            <span class="forecastTemp"></span>
+            <img class="forecastIcon" src="" alt="Forecast Icon">
+        </div>
+        <div id="forecast4">
+            <span class="forecastTime"></span>
+            <span class="forecastTemp"></span>
+            <img class="forecastIcon" src="" alt="Forecast Icon">
+        </div>
+        <div id="forecast5">
+            <span class="forecastTime"></span>
+            <span class="forecastTemp"></span>
+            <img class="forecastIcon" src="" alt="Forecast Icon">
+        </div>
+        <div id="forecast6">
+            <span class="forecastTime"></span>
+            <span class="forecastTemp"></span>
+            <img class="forecastIcon" src="" alt="Forecast Icon">
+        </div>
+     
+
+        </div>
+        <div class="col">
+            <img src="/images/wind.png">
+            <div>
+            <p class="wind"> 13 m/s</p>
+            <p>Vindbyar</p>
+        </div>
+        </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
